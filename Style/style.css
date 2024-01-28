@@ -1,0 +1,86 @@
+body {
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+    overflow-y: hidden;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+a,
+i {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    background-color: transparent;
+    border: 0.063rem white solid;
+    color: white;
+
+}
+
+nav {
+    z-index: 999;
+}
+
+.sidebar {
+    background-color: #0D0D0D;
+}
+
+.alert {
+    width: fit-content;
+}
+
+.meals {
+    cursor: pointer;
+}
+
+nav img {
+    width: 3.125rem;
+}
+
+.layer {
+    background-color: #f9f6f6ca;
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+}
+
+.meals:hover .layer {
+    top: 0;
+}
+
+.loader {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    animation: smokeOut 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 0.063rem white;
+}
+
+.loader:before {
+    content: "Loading";
+}
+
+@keyframes smokeOut {
+    100% {
+        opacity: 0.08;
+        filter: blur(0.313rem);
+        letter-spacing: 0.25rem;
+    }
+}
+
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
